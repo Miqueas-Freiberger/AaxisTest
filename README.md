@@ -18,6 +18,7 @@
 
 9) En la collection de Postman van a ver los endpoints generados para el uso del sistema. Incluyendo tambien el endpoint correspondiente para obtener el token.
 
+10) Recordar ejecutar el servidor con symfony serve o symfony server:start
 //ENGLISH
 
 1)Run Composer Install.
@@ -37,3 +38,5 @@
 8) In the Postman folder, you will find a JSON file that you should import into your Postman to consume and test the created endpoints.
 
 9) In the Postman collection, you will find the generated endpoints for system usage, including the corresponding endpoint to obtain the token.
+
+10) Remember to run the server with symfony serve or symfony server:start
