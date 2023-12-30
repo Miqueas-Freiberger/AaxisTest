@@ -1,0 +1,158 @@
+{
+	"info": {
+		"_postman_id": "6a5dd935-4466-4adc-a36d-4018866e4f61",
+		"name": "Aaxis",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18188262"
+	},
+	"item": [
+		{
+			"name": "http://127.0.0.1:8000/product/load",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE3MDM5NTY0NjcsImV4cCI6MTcwMzk2MDA2Nywicm9sZXMiOlsiUk9MRV9VU0VSIl0sImVtYWlsIjoiYWRtaW5AbWFpbC5jb20ifQ.SE9kfDAz3E-t1TJJ1-Ng4-nH0GEapp5ptXjo3_UhWxAXcIWWDFmva7En4-O7UqgCEKDTvkDqCmS0vWDy4_15y9iywDQQl6NI7LZXziScTTDZKc91NPrl2qtg7Wg4Uo7M0okwVyjBwMfqh55UgXZsxG2SZMgoUzK-oijyyb6f8JAOzkAvSn_q126_Alm9jOHM1sJvLc6hX9x0_YezvRGRiF7ItS0AEo-wgeKY4XfiXusDGrZW7utTq_7X2SscbgFyFVOmhq_wcS-vjErVdWOnmIDsjuU80iI3Xg5iZymTzE8d9h3x4K63SC52IY0tu7SopjM5V_9FZUcuI-usRaIZoQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"sku\":\"20435898311\",\r\n    \"name\": \"Test 50\",\r\n    \"description\": \"Test\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/product/load",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"product",
+						"load"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/product",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE3MDM5NTY0NjcsImV4cCI6MTcwMzk2MDA2Nywicm9sZXMiOlsiUk9MRV9VU0VSIl0sImVtYWlsIjoiYWRtaW5AbWFpbC5jb20ifQ.SE9kfDAz3E-t1TJJ1-Ng4-nH0GEapp5ptXjo3_UhWxAXcIWWDFmva7En4-O7UqgCEKDTvkDqCmS0vWDy4_15y9iywDQQl6NI7LZXziScTTDZKc91NPrl2qtg7Wg4Uo7M0okwVyjBwMfqh55UgXZsxG2SZMgoUzK-oijyyb6f8JAOzkAvSn_q126_Alm9jOHM1sJvLc6hX9x0_YezvRGRiF7ItS0AEo-wgeKY4XfiXusDGrZW7utTq_7X2SscbgFyFVOmhq_wcS-vjErVdWOnmIDsjuU80iI3Xg5iZymTzE8d9h3x4K63SC52IY0tu7SopjM5V_9FZUcuI-usRaIZoQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/product",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"product"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/product/update",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE3MDM5NTY0NjcsImV4cCI6MTcwMzk2MDA2Nywicm9sZXMiOlsiUk9MRV9VU0VSIl0sImVtYWlsIjoiYWRtaW5AbWFpbC5jb20ifQ.SE9kfDAz3E-t1TJJ1-Ng4-nH0GEapp5ptXjo3_UhWxAXcIWWDFmva7En4-O7UqgCEKDTvkDqCmS0vWDy4_15y9iywDQQl6NI7LZXziScTTDZKc91NPrl2qtg7Wg4Uo7M0okwVyjBwMfqh55UgXZsxG2SZMgoUzK-oijyyb6f8JAOzkAvSn_q126_Alm9jOHM1sJvLc6hX9x0_YezvRGRiF7ItS0AEo-wgeKY4XfiXusDGrZW7utTq_7X2SscbgFyFVOmhq_wcS-vjErVdWOnmIDsjuU80iI3Xg5iZymTzE8d9h3x4K63SC52IY0tu7SopjM5V_9FZUcuI-usRaIZoQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[{\r\n    \"sku\": \"22230012399123\",\r\n    \"name\": \"Test updated 1\",\r\n    \"description\": \"Test\"\r\n},\r\n{\r\n    \"sku\": \"20435898304\",\r\n    \"name\": \"Test updated 2\",\r\n    \"description\": \"Test\"\r\n},\r\n{\r\n    \"sku\": \"20435898308 3\",\r\n    \"name\": \"Test updated\",\r\n    \"description\": \"Test\"\r\n}\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/product/update",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"product",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/login_check",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"admin@mail.com\",\r\n    \"password\": \"admin123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/login_check",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"login_check"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
